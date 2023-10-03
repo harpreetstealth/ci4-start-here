@@ -20,9 +20,14 @@
         <p class="text-danger">
             <b>NOTE:</b> No jQuery is being used, Avoid using it at all costs.
         </p>
+        <p class="alert alert-warning">
+            <i class="fa-solid fa-circle-exclamation me-1"></i> This homepage loads from <code>Guide</code> 
+            module located at folder <code>Modules\Guide\</code> <br>
+            once you feel if you have learned the how to use CI4, you can delete this module.
+        </p>
     </div>
     <div class="col-12 col-md-6 mt-3">
-        <h2 class="text-warning">
+        <h2 class="text-warning fw-bold">
             This project has following features
         </h2>
         <ol>
@@ -36,14 +41,16 @@
                         An expected structure will look like this.
                     </li>
                 </ol>
-                <code>
-                Modoles <br>
-                    |_ User // an example modole, for users <br>
-                    &nbsp;&nbsp; |_Controllers <br>
-                    &nbsp;&nbsp; |_Models <br>
-                    &nbsp;&nbsp; |_Config // for config and routes file<br>
-                    &nbsp;&nbsp; |_Views <br>
-                </code>
+                <pre class="alert alert-light">
+                    <code>
+                        Modules
+                            |_ User // an example modole, for users 
+                            &nbsp;&nbsp; |_Controllers 
+                            &nbsp;&nbsp; |_Models 
+                            &nbsp;&nbsp; |_Config // for config and routes file
+                            &nbsp;&nbsp; |_Views 
+                    </code>
+                </pre>
             </li>
             <li>
                 A basic template with <code>header</code>, <code>navbar</code>, <code>footer</code> is already provided
@@ -55,13 +62,14 @@
         <h3 class="text-primary">
             Development guide
         </h3>
+        <ul>
             <li>
-                <a href="">
-                    How to add and manage new modules
+                <a href="<?php echo base_url('guide/modules-and-namespaces') ?>">
+                    How to add and manage new modules with namespaces
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="<?php echo base_url('guide/manage-assets') ?>">
                     How to add new assets based on module
                 </a>
             </li>
@@ -70,5 +78,6 @@
                     How to minify newly added assets
                 </a>
             </li>
+        </ul>
     </div>
 </div>

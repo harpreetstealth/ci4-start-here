@@ -50,7 +50,8 @@ class Autoload extends AutoloadConfig
         'Authenticate' => ROOTPATH . 'Modules/Authenticate',
         'File'         => ROOTPATH . 'Modules/File',
         'Partials'     => ROOTPATH . 'Modules/Partials',
-        'Site'         => ROOTPATH . 'Modules/Site'
+        'Site'         => ROOTPATH . 'Modules/Site',
+        'Guide'         => ROOTPATH . 'Modules/Guide',
     ];
 
     /**

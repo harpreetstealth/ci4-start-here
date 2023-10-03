@@ -11,12 +11,7 @@ class Assets extends \CodeIgniter\Config\BaseConfig
     public static $jsAssets = [
         'common' => [
             'assets/js/bootstrap.bundle.min.js',
-            'assets/js/all.min.js'
-        ],
-        'home' => [
-            'assets/js/modules/home.js'
-        ],
-        'custom'  => [
+            'assets/js/all.min.js',
             'assets/js/modules/base.js'
         ]
     ];
@@ -31,10 +26,6 @@ class Assets extends \CodeIgniter\Config\BaseConfig
         'common' => [
             'assets/css/bootstrap.min.css',
             'assets/css/all.min.css'
-        ],
-        'home' => [],
-        'custom'  => [
-            'assets/css/modules/custom.css'
         ]
     ];
 }

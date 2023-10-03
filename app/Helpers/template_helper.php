@@ -1,26 +1,34 @@
 <?php
 function load_template(
     string $main_template,
-    string $assets_module = 'common'
+    string $assets_module = 'common',
+    array $data = []
 ): string
 {
 
     $header = View(
         'Partials\Views\header',
-        [
-            'asset_module' => $assets_module
-        ]
+        array_merge(
+            $data,
+            [
+                'asset_module' => $assets_module
+            ]
+        )
     );
 
     $footer = View(
         'Partials\Views\footer',
-        [
-            'asset_module' => $assets_module
-        ]
+        array_merge(
+            $data,
+            [
+                'asset_module' => $assets_module
+            ]
+        )
     );
 
     $menu = View(
-        'Partials\Views\navbar'
+        'Partials\Views\navbar',
+        $data
     );
 
       /* load minify class */

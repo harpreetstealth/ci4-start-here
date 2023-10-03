@@ -83,6 +83,7 @@ class Modules extends BaseModules
         'authenticate',
         'file',
         'partials',
-        'site'
+        'site',
+        'guide'
     ];
 }

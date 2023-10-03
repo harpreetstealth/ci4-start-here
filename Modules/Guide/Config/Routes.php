@@ -1,4 +1,7 @@
 <?php
+/* this is home route */
+$routes->get( '/', '\Guide\Controllers\Handle::index' );
+
 /* a route group that starts from  */
 $routes->group( 'guide', static function ( $routes )
 {
@@ -6,5 +9,5 @@ $routes->group( 'guide', static function ( $routes )
     $routes->get( 'modules-and-namespaces', '\Guide\Controllers\Handle::modulesAndNamespaces' );
 
     /* route to documenation for asset usage and minification */
-    $routes->get( '/manage-assets-doc', '\Guide\Controllers\Handle::manageAssetsDoc' );
+    $routes->get( 'manage-assets', '\Guide\Controllers\Handle::manageAssets' );
 } );

@@ -16,34 +16,6 @@ class Handle extends \App\Controllers\BaseController
     }
 
     /**
-     * function to load index for site, this is home page
-     *
-     * @return string
-     * @author Harpreet Stealth
-     */
-    public function index(): string
-    {
-        return load_template(
-            View( '\Site\Views\index' ),
-            'home'
-        );
-    }
-
-    /**
-     * function to load asset documentation view
-     *
-     * @return string
-     * @author Harpreet Stealth
-     */
-    public function manageAssetsDoc(): string
-    {
-        return load_template(
-            View( '\Site\Views\manage-assets-doc' ),
-            'custom'
-        );
-    }
-
-    /**
      * function to minify assets
      *
      * @return string

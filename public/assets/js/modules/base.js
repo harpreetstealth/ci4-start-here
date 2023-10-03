@@ -1,28 +1,19 @@
 const Base = {
-    openPopUp: () =>
+    fixedScroll: () =>
     {
-        let btn = document.getElementById( 'popup-btn' );
-        if ( btn ) 
+        const elements = document.getElementsByClassName( 'set-browser-height' );
+        if ( elements ) 
         {
-
-            // old method
-            // btn.onclick(function(e){
-
-            // });
-
-            // new style
-            btn.onclick = ( e ) =>
+            for ( const item of elements )
             {
-                e.preventDefault();
-                let modal = new tingle.modal();
-                modal.setContent( '<h1>here\'s some content</h1>' );
-                modal.open();
-            };
+                console.log(window.innerHeight);
+                item.style.height = `${window.innerHeight-150}px`;
+            }
         }
     }
 };
 
 /* anonymous function */
 (()=>{
-    Base.openPopUp();
+    Base.fixedScroll();
 })();
