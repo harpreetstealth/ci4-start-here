@@ -4,7 +4,7 @@
             Codeigniter 4 startup project
         </h1>
         <p>
-            This is a sample project for codeigniter 4. You can clone and use it to start your projects.
+            This is a sample project for codeigniter 4. 
         </p>
         <p class="fw-bold">
             This project uses following libraries.
@@ -20,10 +20,15 @@
         <p class="text-danger">
             <b>NOTE:</b> No jQuery is being used, Avoid using it at all costs.
         </p>
-        <p class="alert alert-warning">
+        <p class="alert alert-info">
             <i class="fa-solid fa-circle-exclamation me-1"></i> This homepage loads from <code>Guide</code> 
             module located at folder <code>Modules\Guide\</code> <br>
-            once you feel if you have learned the how to use CI4, you can delete this module.
+            once you feel if you have learned the how to use CI4, you can delete this module. <br>
+        </p>
+        <p class="alert alert-info">
+            <i class="fa-solid fa-circle-exclamation me-1"></i> CI4 requires you to have an ENV file. It is also recommended to use one. <br>
+            A sample <code>ENV</code> file has been provided with name <code>sample.env</code>.
+            You need to rename the file to <code>.env</code> and save to your root directory.
         </p>
     </div>
     <div class="col-12 col-md-6 mt-3">

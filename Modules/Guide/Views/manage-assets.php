@@ -134,7 +134,7 @@
            For module <code>Auth</code> we have used two different file <code>login.js</code> and <code>signup.js</code>. <br>
            This is all you need to do to load assets based on views. <br>
            <b>SUGGESTION:</b> If you wish you can use only one asset module name as <code>auth</code> 
-           s(since login and signup are part of auth) and use 
+           (since login and signup are part of auth) and use 
            <code>assets/js/modules/auth.css</code> and  <code>assets/js/modules/auth.js</code>
         </p>
         <p class="alert alert-info">
@@ -146,11 +146,5 @@
             Module <code>Partials</code> contains basic 
             <code>header</code>, <code>footer</code>, <code>navbar</code> and <code>offcanvas</code> files.
         </p>
-    </div>
-
-    <div class="col-12 col-md-6 mt-3">
-        <h2 class="text-danger">
-            
-        </h2>
     </div>
 </div>
