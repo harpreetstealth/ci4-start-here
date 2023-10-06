@@ -47,7 +47,7 @@ class Handle extends \App\Controllers\BaseController
         $responseStr = '';
         /* get the js Assets */
         $jsAssets = \Partials\Config\Assets::$jsAssets;
-        d( $jsAssets );
+        // d( $jsAssets );
         /* loop through the assets */
         foreach ( $jsAssets as $module => $files )
         {
@@ -61,14 +61,14 @@ class Handle extends \App\Controllers\BaseController
                 );
             }
 
-            \CodeIgniter\CLI\CLI::write("== Looping for Module {$module}");
+            \CodeIgniter\CLI\CLI::write("== Looping for Module ".\CodeIgniter\CLI\CLI::color($module, 'red'));
 
             /* create an instance */
             $minifier = new \MatthiasMullie\Minify\JS();
 
             foreach ( $files as $file )
             {
-                \CodeIgniter\CLI\CLI::write("    * adding file <code>{$file}</code> to minify");
+                \CodeIgniter\CLI\CLI::write("    * adding file ".\CodeIgniter\CLI\CLI::color($file, 'blue')." to minify");
                 /* add path to minifier */
                 $minifier->add( $file );
             }
@@ -85,7 +85,7 @@ class Handle extends \App\Controllers\BaseController
         $responseStr = '';
         /* get the js Assets */
         $cssAssets = \Partials\Config\Assets::$cssAssets;
-        d( $cssAssets );
+        // d( $cssAssets );
         /* loop through the assets */
         foreach ( $cssAssets as $module => $files )
         {
@@ -99,14 +99,14 @@ class Handle extends \App\Controllers\BaseController
                 );
             }
 
-            \CodeIgniter\CLI\CLI::write("== Looping for Module {$module}");
+            \CodeIgniter\CLI\CLI::write("== Looping for Module ".\CodeIgniter\CLI\CLI::color($module, 'red'));
 
             /* create an instance */
             $minifier = new \MatthiasMullie\Minify\CSS();
 
             foreach ( $files as $file )
             {
-                \CodeIgniter\CLI\CLI::write("    * adding file <code>{$file}</code> to minify");
+                \CodeIgniter\CLI\CLI::write("    * adding file ".\CodeIgniter\CLI\CLI::color($file, 'blue')." to minify");
                 /* add path to minifier */
                 $minifier->add( $file );
             }

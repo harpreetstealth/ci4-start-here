@@ -1,7 +1,7 @@
 <div class="row">
 <div class="col-12 mt-3 set-browser-height overflow-auto">
         <h1 class="text-primary border-bottom pb-2">
-           How to load and manage assets
+           2. Loading Assets Based On Modules
         </h1>
         <p>
             Assets can be anything from css, js to images. But here we will talk about the 
@@ -26,7 +26,7 @@
             <code>
                 Module/Auth/Controllers/Handle.php
             </code> with following code <br>
-            <pre class="alert alert-light">
+            <pre class="alert alert-primary">
                 <code>
                     &lt;?php namespace Auth\Controllers;
                     class Handle extends \App\Controllers\BaseController

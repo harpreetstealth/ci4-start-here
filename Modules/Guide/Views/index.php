@@ -1,8 +1,15 @@
 <div class="row">
+    <div class="col-12 mt-2">
+        <div class="alert alert-danger">
+            <h1 class="fw-bold text-center text-capitalize">
+                every line & sample code is written for you, <br> don't be stupid, read & try to understand all of it
+            </h1>
+        </div>
+    </div>
     <div class="col-12 col-md-6 mt-3 set-browser-height overflow-auto border-end">
-        <h1 class="text-primary border-bottom pb-2">
+        <h2 class="text-primary border-bottom pb-2">
             Codeigniter 4 startup project
-        </h1>
+        </h2>
         <p>
             This is a sample project for codeigniter 4. 
         </p>
@@ -46,7 +53,7 @@
                         An expected structure will look like this.
                     </li>
                 </ol>
-                <pre class="alert alert-light">
+                <pre class="alert alert-primary">
                     <code>
                         Modules
                             |_ User // an example modole, for users 
@@ -67,22 +74,8 @@
         <h3 class="text-primary">
             Development guide
         </h3>
-        <ul>
-            <li>
-                <a href="<?php echo base_url('guide/modules-and-namespaces') ?>">
-                    How to add and manage new modules with namespaces
-                </a>
-            </li>
-            <li>
-                <a href="<?php echo base_url('guide/manage-assets') ?>">
-                    How to add new assets based on module
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    How to minify newly added assets
-                </a>
-            </li>
-        </ul>
+        <ol>
+            <?php echo View('\Guide\Views\links'); ?>
+        </ol>
     </div>
 </div>

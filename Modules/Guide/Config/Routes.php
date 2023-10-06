@@ -10,4 +10,7 @@ $routes->group( 'guide', static function ( $routes )
 
     /* route to documenation for asset usage and minification */
     $routes->get( 'manage-assets', '\Guide\Controllers\Handle::manageAssets' );
+
+    /* route to load documentation for minifying assets */
+    $routes->get( 'minify-assets', '\Guide\Controllers\Handle::minifyAssets' );
 } );

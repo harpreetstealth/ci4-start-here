@@ -56,4 +56,18 @@ class Handle extends \App\Controllers\BaseController
             'common'
         );
     }
+
+    /**
+     * fucniton to load minify asset documentation
+     *
+     * @return string
+     * @author Harrpeet Stealth
+     */
+    public function minifyAssets(): string
+    {
+        return load_template(
+            View( '\Guide\Views\minify-assets' ),
+            'common'
+        );
+    }
 }
