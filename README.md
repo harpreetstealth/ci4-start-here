@@ -8,6 +8,7 @@ This project uses following libraries.
 **> No jQuery is being used, Avoid using it at all costs.**
 
 ## To setup this project
+- [Install composer](https://getcomposer.org/download/), if you dont have it
 - Clone the respository
 - go to project root directory
 - run `composer install` to install related modules
@@ -15,7 +16,7 @@ This project uses following libraries.
 **> CI4 requires you to have an ENV file. It is also recommended to use one. A sample `ENV` file has been provided with name `sample.env`.
 You need to rename the file to <code>.env</code> and save to your root directory.**
 
-**> it is important that you uncomment and update the base url in your env**
+**> it is important that you uncomment and update the base url in your `.env` file **
 ```
     app.baseURL = ''
 ```
