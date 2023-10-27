@@ -52,6 +52,7 @@ class Autoload extends AutoloadConfig
         'Partials'     => ROOTPATH . 'Modules/Partials',
         'Site'         => ROOTPATH . 'Modules/Site',
         'Guide'         => ROOTPATH . 'Modules/Guide',
+        'Admin'         => ROOTPATH . 'Modules/Admin',
     ];
 
     /**

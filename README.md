@@ -20,3 +20,8 @@ You need to rename the file to <code>.env</code> and save to your root directory
 ```
     app.baseURL = ''
 ```
+## ADMIN CREDENTIALS
+**> please check the SQl file provided for admin database table. File is at `database-tables/admin.sql`. You can delete this file after if you wish**
+- url: `<host>/admin`
+- username: `adminuser`
+- password: `demo-admin-provided`

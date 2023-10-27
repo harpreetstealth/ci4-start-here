@@ -84,6 +84,7 @@ class Modules extends BaseModules
         'file',
         'partials',
         'site',
-        'guide'
+        'guide',
+        'admin'
     ];
 }

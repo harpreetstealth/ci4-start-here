@@ -13,6 +13,13 @@ class Assets extends \CodeIgniter\Config\BaseConfig
             'assets/js/bootstrap.bundle.min.js',
             'assets/js/all.min.js',
             'assets/js/modules/base.js'
+        ],
+        'admin' => [
+            'assets/js/progressbar.min.js',
+            'assets/js/bootstrap.bundle.min.js',
+            'assets/js/all.min.js',
+            'assets/js/modules/admin/base.js',
+            'assets/js/modules/admin/auth.js'
         ]
     ];
 
@@ -26,6 +33,11 @@ class Assets extends \CodeIgniter\Config\BaseConfig
         'common' => [
             'assets/css/bootstrap.min.css',
             'assets/css/all.min.css'
+        ],
+        'admin' => [
+            'assets/css/bootstrap.min.css',
+            'assets/css/all.min.css',
+            'assets/css/admin/base.css'
         ]
     ];
 }
