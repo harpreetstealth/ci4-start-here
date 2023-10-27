@@ -4,20 +4,15 @@
 		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 	</div>
 	<div class="offcanvas-body">
-		<div>
-			<h3 class="text-primary">
-				Development guide
-			</h3>
-		</div>
-		<div>
-			<ol>
-				<li>
-					<a href="<?php echo base_url() ?>">
-						Home
-					</a>
-				</li>
-				<?php echo View('\Guide\Views\links'); ?>
-			</ol>
+		<div class="list-group">
+			<a href="<?php echo base_url('admin/dashboard'); ?>" 
+			class="list-group-item list-group-item-action">
+				Dashboard
+			</a>
+			<a href="<?php echo base_url('admin/logout'); ?>" 
+			class="list-group-item list-group-item-action text-danger">
+				Logout
+			</a>
 		</div>
 	</div>
 </div>

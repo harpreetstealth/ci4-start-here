@@ -43,4 +43,16 @@ class Handle extends \App\Controllers\BaseController
             $data
         );
     }
+    
+    /**
+     * log out user
+     *
+     * @return void
+     * @author Harrpeet Stealth
+     */
+    public  function logout()
+    {
+        $this->session->destroy();
+        return redirect()->to(base_url('admin'));
+    }
 }
