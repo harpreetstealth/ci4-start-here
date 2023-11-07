@@ -62,8 +62,6 @@ class Auth extends \App\Controllers\BaseController
 
             $adminModel = new \Admin\Models\AdminModel();
 
-            $pwdHash = password_hash( $password, PASSWORD_DEFAULT );
-
             $admin = $adminModel->where(
                 [
                     'admin_username' => strip_tags( $username ),
@@ -77,7 +75,7 @@ class Auth extends \App\Controllers\BaseController
             }
             else
             {
-                if (! password_verify( $password, $pwdHash )) 
+                if (! password_verify( $password, $admin->admin_pwd )) 
                 {
                     return $this->fail( "Invalid Login Credentials", 403 );
                 }
