@@ -68,6 +68,7 @@ class Auth extends \App\Controllers\BaseController
                     'admin_status'   => 'active'
                 ]
             )->first();
+            
 
             if ( empty( $admin ) )
             {
